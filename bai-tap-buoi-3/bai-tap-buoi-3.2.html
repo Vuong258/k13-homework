@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap buoi 3.2</title>
+</head>
+<body>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+    <table border="0" >
+        <tr>
+            <td><label for="Username">Username</label> </td>
+            <td><input type="text" name="username" id="username"></td>
+        </tr>
+        <tr>
+            <td><label for="Password">Password</label> </td>
+            <td><input type="text" name="Password" id="Password"></td>
+        </tr>
+        <tr>
+            <td><label for="City of Employment">City of<br> emloyment</label> </td>
+            <td><input type="text" name="City of Employment" id="City of Employment"></td>
+        </tr>
+        <tr>
+            <td><label for="Web server">Web server</label> </td>
+            <td><select name="Web server" id="Web server">
+                <option value="">-Choose a server-</option>
+                <option value="server1">server1</option>
+                <option value="server2">server2</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Please specify">Please specify<br> your role</label>
+            </td>
+            <td>
+                <input type="radio" name="role" value="Admin">
+                <label>Admin</label><br>
+                <input type="radio" name="role" value="Engineer">
+                <label>Engineer</label><br>
+                <input type="radio" name="role" value="Manager">
+                <label>Manager</label><br>
+                <input type="radio" name="role" value="Guest">
+                <label>Guest</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Single Sign-on to the following">Single Sign-on<br> to the following</label>
+            </td>
+            <td>
+                <input type="checkbox" name="Mail" id=Mail value="Mail">
+                <label>Mail</label><br>
+                <input type="checkbox" name="Payroll" id=Payroll value="Payroll">
+                <label>Payroll</label><br>
+                <input type="checkbox" name="Self-service" id=Self-service value="Self-service">
+                <label>Self-service</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" >
+                <input type="Login" value="Login">
+                <button type="Reset" value="Reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
