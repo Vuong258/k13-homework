@@ -1,0 +1,32 @@
+.accordion-item::before {
+    content: "+";
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: 200px; /* Điều chỉnh chiều cao theo nội dung */
+    padding: 10px;
+}
