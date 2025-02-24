@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap buoi 6.1</title>
+    <link rel="stylesheet" href="bai-tap-buoi-6.1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="contact-form">
+    <h1>Hey there</h1>
+    <p class="description">We'd like to hear from you. Send us your message or just say hi!</p>
+
+    <form action="#">
+        <div class="input-container">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="your@domain.com" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-phone"></i>
+            <input type="tel" placeholder="+44 00 123">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-book"></i>
+            <select required>
+                <option value="">Subject</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="general">General Inquiry</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-comment"></i>
+            <textarea placeholder="Message" required></textarea>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="copy">
+            <label for="copy">Send me a copy of this message</label>
+        </div>
+
+        <button type="submit" class="send-btn">SEND</button>
+    </form>
+</div>
+</body>
+</html>
